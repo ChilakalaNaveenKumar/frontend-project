@@ -42,12 +42,20 @@
 
                     <h5>Behind every successful project at E2E is a team of dedicated professionals who share Melissa Ball's passion for technology and excellence. Our team is composed of experienced developers, data analysts, and project managers who work collaboratively to deliver outstanding results.</h5>
                 </v-col>
-                <v-col></v-col>
+                <v-col class="default-avatar">
+                    <v-avatar size="100">
+                        <v-icon size="100">mdi-account</v-icon>
+                    </v-avatar>
+                </v-col>
             </v-row>
         </v-container>
         <v-container>
             <v-row>
-                <v-col></v-col>
+                <v-col class="default-avatar">
+                    <v-avatar size="100">
+                        <v-icon size="100">mdi-account</v-icon>
+                    </v-avatar>
+                </v-col>
                 <v-col>
                     <h3>Director of all Technology Solutions</h3>
                     <h1><span>Dr. Sunil</span> Kumar, Ph.D., PMP </h1>
@@ -72,12 +80,20 @@
                     <br/>
                     <h5>He is specialized in RDBMS, Data engineering, BI Analytics and SAP products.</h5>
                 </v-col>
-                <v-col></v-col>
+                <v-col class="default-avatar">
+                    <v-avatar size="100">
+                        <v-icon size="100">mdi-account</v-icon>
+                    </v-avatar>
+                </v-col>
             </v-row>
         </v-container>
         <v-container>
             <v-row>
-                <v-col></v-col>
+                <v-col class="default-avatar">
+                    <v-avatar size="100">
+                        <v-icon size="100">mdi-account</v-icon>
+                    </v-avatar>
+                </v-col>
                 <v-col>
                     <h3>Director of Web Applications</h3>
                     <h1><span>Dr. Sani</span> Kumar</h1>
@@ -115,5 +131,20 @@ export default {
 .leadership-section h3 {
     color: #658cb1;
     font-family: cursive;
+}
+.default-avatar {
+    background: repeating-linear-gradient(
+    -45deg, 
+    rgba(200, 200, 200, 0.2),  /* Light grey with transparency */
+    rgba(200, 200, 200, 0.2) 2px, /* Thin line width */
+    transparent 2px, 
+    transparent 20px  /* More space between lines */
+  );
+    .v-avatar {
+        color: #658cb1;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+    }
 }
 </style>

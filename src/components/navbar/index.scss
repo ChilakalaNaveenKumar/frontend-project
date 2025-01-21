@@ -28,23 +28,18 @@
   }
   
   .v-btn {
-    color: orange;
     text-transform: none;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
   }
 
-  .v-btn:active, .v-btn:focus, .v-btn:hover {
-    background: linear-gradient(135deg, #FFB347 0%, #FF8008 100%);
+  .app-background .v-btn:active, .v-btn:focus, .v-btn:hover, .v-icon:active,  .v-icon:hover {
+    background: linear-gradient(135deg, #658cb1 0%, #658cb1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-radius: 8px;
     transition: transparent 0.3s ease;
     background-color: transparent;
-  }
-
-  .v-btn:active {
-    color: black;
   }
   
   .v-main {
