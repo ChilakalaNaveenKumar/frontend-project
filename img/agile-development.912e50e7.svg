@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="120">
+  <!-- Background Circle -->
+  <circle cx="70" cy="70" r="55" fill="white" stroke="#D3D3D3" stroke-width="4"/>
+
+  <!-- Circular Progress -->
+  <path 
+    d="M 70 15 A 55 55 0 1 1 15 70"
+    stroke="#2C91E2"
+    stroke-width="6"
+    fill="none"
+    stroke-linecap="round"
+    stroke-dasharray="345" 
+    stroke-dashoffset="345">
+    
+    <!-- Animation -->
+    <animate class="progressAnimation" attributeName="stroke-dashoffset" from="345" to="86" dur="2s" begin="1s" fill="freeze" restart="always"/>
+  </path>
+  <!-- Left Box -->
+  <rect x="30" y="55" width="15" height="20" fill="none" stroke="#658cb1" stroke-width="4" rx="3"/>
+  <circle cx="37" cy="61" r="2.5" fill="orange"/>
+  <circle cx="37" cy="69" r="2.5" fill="green"/>
+
+  <!-- Right Boxes -->
+  <rect x="90" y="45" width="15" height="20" fill="none" stroke="#658cb1" stroke-width="4" rx="3"/>
+  <circle cx="97" cy="51" r="2.5" fill="orange"/>
+  <circle cx="97" cy="59" r="2.5" fill="green"/>
+
+  <rect x="90" y="70" width="15" height="20" fill="none" stroke="#658cb1" stroke-width="4" rx="3"/>
+  <circle cx="97" cy="76" r="2.5" fill="orange"/>
+  <circle cx="97" cy="84" r="2.5" fill="green"/>
+
+  <!-- Connecting Lines -->
+  <line x1="45" y1="65" x2="65" y2="65" stroke="#658cb1" stroke-width="4"/>
+  <line x1="65" y1="65" x2="65" y2="55" stroke="#658cb1" stroke-width="4"/>
+  <line x1="65" y1="65" x2="65" y2="80" stroke="#658cb1" stroke-width="4"/>
+  <line x1="65" y1="55" x2="90" y2="55" stroke="#658cb1" stroke-width="4"/>
+  <line x1="65" y1="80" x2="90" y2="80" stroke="#658cb1" stroke-width="4"/>
+</svg>
