@@ -1,0 +1,52 @@
+.app-background header {
+    position: relative !important;
+    top: 10px !important;
+  }
+
+  .app-background .v-app-bar.v-toolbar:not(.v-toolbar--flat) {
+    box-shadow: none;
+  }
+
+  .navbar a, .navbar .v-icon {
+    font-family: "Amaranth", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    margin-right: 5px;
+  }
+
+  .navbar .v-icon {
+    color: #658cb1
+  }
+  
+  .routing-pages {
+    padding: 24px !important;
+  }
+  
+  .v-app-bar {
+    color: #e4e6eb;
+  }
+  
+  .v-btn {
+    color: orange;
+    text-transform: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
+  .v-btn:active, .v-btn:focus, .v-btn:hover {
+    background: linear-gradient(135deg, #FFB347 0%, #FF8008 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 8px;
+    transition: transparent 0.3s ease;
+    background-color: transparent;
+  }
+
+  .v-btn:active {
+    color: black;
+  }
+  
+  .v-main {
+    height: calc(100vh - 130px); /* Adjust for navbar */
+  }

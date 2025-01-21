@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="120">
+
+  <!-- Background Circle -->
+  <circle cx="70" cy="70" r="55" fill="white" stroke="#D3D3D3" stroke-width="4"/>
+
+  <!-- Circular Progress -->
+  <path
+    d="M 70 15 A 55 55 0 1 1 15 70"
+    stroke="#2C91E2"
+    stroke-width="6"
+    fill="none"
+    stroke-linecap="round"
+    stroke-dasharray="345" 
+    stroke-dashoffset="345">
+    
+    <!-- Animation -->
+    <animate class="progressAnimation" attributeName="stroke-dashoffset" from="345" to="86" dur="2s" begin="1s" fill="freeze" restart="always"/>
+  </path>
+
+  <!-- Bar Chart -->
+  <rect x="40" y="50" width="5" height="20" fill="#1B5E20"/>
+  <rect x="50" y="55" width="5" height="15" fill="#1565C0"/>
+  <rect x="60" y="60" width="5" height="10" fill="#FBC02D"/>
+  <rect x="70" y="45" width="5" height="25" fill="#FF9800"/>
+
+  <!-- Chart Base -->
+  <line x1="35" y1="70" x2="80" y2="70" stroke="#BDBDBD" stroke-width="2"/>
+
+  <!-- Magnifying Glass -->
+  <circle cx="80" cy="40" r="12" fill="none" stroke="#2C91E2" stroke-width="3"/>
+  <line x1="86" y1="45" x2="95" y2="55" stroke="#2C91E2" stroke-width="3"/>
+
+  <!-- Pie Chart Inside Magnifying Glass -->
+  <circle cx="80" cy="40" r="8" fill="white" stroke="none"/>
+  <path d="M 80 32 A 8 8 0 0 1 88 40 L 80 40 Z" fill="#F44336"/>
+  <path d="M 80 40 L 88 40 A 8 8 0 0 1 80 48 Z" fill="#FF9800"/>
+  <path d="M 80 40 L 80 48 A 8 8 0 0 1 72 40 Z" fill="#1565C0"/>
+
+  <!-- Label Above -->
+  <rect x="55" y="25" width="20" height="8" fill="#E64A19" rx="2"/>
+  <line x1="58" y1="29" x2="72" y2="29" stroke="white" stroke-width="1"/>
+</svg>
